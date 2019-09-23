@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 export default function App() {
 	return (
 		<View>
-			<Text> E Fi </Text>
+			<Text> E Fi ão </Text>
 		</View>
 	);
 }
