@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import PropTypes from 'prop-types';
 import { Image } from 'react-native';
 import logo from '~/assets/logo.png';
 
@@ -57,10 +58,16 @@ export default function SignUp({ navigation }) {
 					<SubmitButton onPress={handleSubmit}>Criar</SubmitButton>
 				</Form>
 
-				<SignLink onPress={() => navigation.navigate('Signin')}>
+				<SignLink onPress={() => navigation.navigate('SignIn')}>
 					<SignLinkText>Já tenho conta</SignLinkText>
 				</SignLink>
 			</Container>
 		</Background>
 	);
 }
+
+SignUp.propTypes = {
+	navigation: PropTypes.shape({
+		navigate: PropTypes.func.isRequired,
+	}).isRequired,
+};
