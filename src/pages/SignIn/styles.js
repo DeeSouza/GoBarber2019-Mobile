@@ -5,7 +5,7 @@ import Input from '~/components/Input';
 import Button from '~/components/Button';
 
 export const Container = styled.KeyboardAvoidingView.attrs({
-	enable: Platform.OS === 'ios',
+	enabled: Platform.OS === 'ios',
 	behavior: 'padding',
 })`
 	flex: 1;
