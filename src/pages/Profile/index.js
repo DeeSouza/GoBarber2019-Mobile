@@ -10,9 +10,11 @@ import {
 	Title,
 	FormInput,
 	SubmitButton,
+	Logout,
 	Separator,
 } from './styles';
 
+import { signOut } from '~/store/modules/auth/actions';
 import { updateProfileRequest } from '~/store/modules/user/actions';
 
 export default function Profile() {
@@ -46,6 +48,10 @@ export default function Profile() {
 		};
 
 		dispatch(updateProfileRequest(data));
+	}
+
+	function handleLogout() {
+		dispatch(signOut());
 	}
 
 	return (
@@ -116,6 +122,8 @@ export default function Profile() {
 					<SubmitButton onPress={handleSubmit}>
 						Atualizar Perfil
 					</SubmitButton>
+
+					<Logout onPress={handleLogout}>Sair do GoBarber</Logout>
 				</Form>
 			</Container>
 		</Background>
