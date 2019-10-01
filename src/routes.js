@@ -22,7 +22,9 @@ export default (isSigned = false) =>
 					{
 						tabBarOptions: {
 							keyboardHidesTabBar: true,
-							activeTintColor: '#FFF',
+							activeTintColor: '#FFFFFF',
+							showIcon: true,
+							showLabel: true,
 							style: {
 								backgroundColor: '#8d41a8',
 							},
