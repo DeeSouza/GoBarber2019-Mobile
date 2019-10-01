@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import Icon from 'react-native-vector-icons/MaterialIcons';
-
 import api from '~/services/api';
 
 import Background from '~/components/Background';
@@ -56,16 +53,3 @@ export default function Dashboard() {
 		</Background>
 	);
 }
-
-const TabIcon = ({ tintColor }) => (
-	<Icon name="event" size={20} color={tintColor} />
-);
-
-TabIcon.propTypes = {
-	tintColor: PropTypes.string.isRequired,
-};
-
-Dashboard.navigationOptions = {
-	tabBarLabel: 'Agendamentos',
-	tarBarIcon: TabIcon,
-};
