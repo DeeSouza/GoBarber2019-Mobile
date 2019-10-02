@@ -81,6 +81,7 @@ export default (isSigned = false) =>
 						},
 					},
 					{
+						resetOnBlur: true,
 						tabBarOptions: {
 							keyboardHidesTabBar: true,
 							activeTintColor: '#FFFFFF',

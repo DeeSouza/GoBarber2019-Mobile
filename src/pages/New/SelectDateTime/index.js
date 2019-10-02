@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { TouchableOpacity } from 'react-native';
 import Background from '~/components/Background';
@@ -14,7 +16,6 @@ export default function SelectDateTime({ navigation }) {
 
 	useEffect(() => {
 		async function loadAvailable() {
-			console.tron.log(date);
 			const response = await api.get(
 				`providers/${provider.id}/availables`,
 				{
@@ -58,6 +59,13 @@ export default function SelectDateTime({ navigation }) {
 		</Background>
 	);
 }
+
+SelectDateTime.propTypes = {
+	navigation: PropTypes.shape({
+		getParam: PropTypes.func.isRequired,
+		navigate: PropTypes.func,
+	}).isRequired,
+};
 
 SelectDateTime.navigationOptions = ({ navigation }) => ({
 	title: 'Selecione o Horário',

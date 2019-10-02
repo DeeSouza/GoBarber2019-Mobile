@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import PropTypes from 'prop-types';
 import { parseISO, formatRelative } from 'date-fns';
 import pt from 'date-fns/locale/pt';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -51,6 +52,13 @@ export default function Confirm({ navigation }) {
 		</Background>
 	);
 }
+
+Confirm.propTypes = {
+	navigation: PropTypes.shape({
+		getParam: PropTypes.func.isRequired,
+		navigate: PropTypes.func,
+	}).isRequired,
+};
 
 Confirm.navigationOptions = ({ navigation }) => ({
 	title: 'Confirmar Agendamento',

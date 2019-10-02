@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import { TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Background from '~/components/Background';
@@ -50,6 +51,12 @@ export default function SelectProvider({ navigation }) {
 		</Background>
 	);
 }
+
+SelectProvider.propTypes = {
+	navigation: PropTypes.shape({
+		navigate: PropTypes.func,
+	}).isRequired,
+};
 
 SelectProvider.navigationOptions = ({ navigation }) => ({
 	title: 'Selecione o Prestador',
