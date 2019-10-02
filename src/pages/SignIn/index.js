@@ -58,7 +58,9 @@ export default function SignIn({ navigation }) {
 						onChangeText={setPassword}
 					/>
 
-					<SubmitButton loading={loading} onPress={handleSubmit}>Acessar</SubmitButton>
+					<SubmitButton loading={loading} onPress={handleSubmit}>
+						Acessar
+					</SubmitButton>
 				</Form>
 
 				<SignLink onPress={() => navigation.navigate('SignUp')}>
