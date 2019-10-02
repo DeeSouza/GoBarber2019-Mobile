@@ -88,6 +88,7 @@ export default (isSigned = false) =>
 							showLabel: true,
 							style: {
 								backgroundColor: '#8d41a8',
+								borderTopColor: '#8d41a8',
 							},
 							inactiveTintColor: 'rgba(255, 255, 255, 0.6)',
 						},
