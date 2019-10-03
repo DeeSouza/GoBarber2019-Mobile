@@ -1,9 +1,9 @@
 <h1 align="center">GOBARBER APP - FRONTEND MOBILE</h1>
 
-![reactbadge](https://img.shields.io/badge/16.9.0-React-blue?style=flat-square&logo=react)
-![reactbadge](https://img.shields.io/badge/0.60.5-React%20Native-purple?style=flat-square&logo=react)
-![reactbadge](https://img.shields.io/badge/1.38.0-Visual%20Code-orange?style=flat-square&logo=visual-studio-code)
-![reactbadge](https://img.shields.io/badge/1.17.3-version-red?style=flat-square&logo=yarn)
+![1](https://img.shields.io/badge/16.9.0-React-blue?style=flat-square&logo=react)
+![2](https://img.shields.io/badge/0.60.5-React%20Native-purple?style=flat-square&logo=react)
+![3](https://img.shields.io/badge/1.38.0-Visual%20Code-orange?style=flat-square&logo=visual-studio-code)
+![4](https://img.shields.io/badge/1.17.3-Yarn-lightblue?style=flat-square&logo=yarn)
 
 > Aplicativo para agendamento de corte de cabelo e barba para smartphones Android e iOS.
 
