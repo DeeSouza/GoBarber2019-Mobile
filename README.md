@@ -1,4 +1,4 @@
-<h1 align="center">GOBARBER APP - FRONTEND MOBILE</h1>
+# GOBARBER APP - FRONTEND MOBILE
 
 ![1](https://img.shields.io/badge/16.9.0-React-blue?style=flat-square&logo=react)
 ![2](https://img.shields.io/badge/0.60.5-React%20Native-purple?style=flat-square&logo=react)
@@ -29,6 +29,7 @@ react-native run-android
 6. Date FNS
 
 ## Techs Dev
+
 1. Editor Config
 2. ESLint
 3. Prettier

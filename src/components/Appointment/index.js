@@ -20,8 +20,8 @@ export default function Appointment({ data, onCancel }) {
 			<Left>
 				<Avatar
 					source={{
-						uri: data.provider.avatar_url
-							? data.provider.avatar_url
+						uri: data.provider.avatar.url
+							? data.provider.avatar.url
 							: `https://api.adorable.io/avatar/50/${data.provider.name}.png`,
 					}}
 				/>
@@ -41,10 +41,13 @@ export default function Appointment({ data, onCancel }) {
 }
 
 Appointment.propTypes = {
+	onCancel: PropTypes.func.isRequired,
 	data: PropTypes.shape({
 		provider: PropTypes.shape({
 			name: PropTypes.string,
-			avatar_url: PropTypes.string,
+			avatar: PropTypes.shape({
+				url: PropTypes.string,
+			}),
 		}).isRequired,
 		date: PropTypes.string,
 		past: PropTypes.bool,

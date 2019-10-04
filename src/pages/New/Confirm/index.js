@@ -36,8 +36,8 @@ export default function Confirm({ navigation }) {
 			<Container>
 				<Avatar
 					source={{
-						uri: provider.avatar_url
-							? provider.avatar_url
+						uri: provider.avatar
+							? provider.avatar.url
 							: `https://api.adorable.io/avatar/50/${provider.name}.png`,
 					}}
 				/>
